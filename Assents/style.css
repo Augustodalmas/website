@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    height: 100%;
+    font-family: 'Open Sans';
+}
+
+.clear{
+  clear: right;
+  height: auto;
+}
+
+body{
+  background-color: #E6E6E6;
+}
+
+nav{
+  width: 100%;
+  height: 100px;
+  background-color: rgb(250, 250, 250);
+}
+
+.container{
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+.container img{
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+}
+
+.textos{
+  width: calc(100% - 100px);
+  height: 80px;
+  position:relative;
+  top: 50%;
+}
+
+.textos a{
+  font-size: 24px;
+  margin: 0px 50px;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-decoration: underline;
+}
+
+@media (max-width:715px) {
+  .container img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 8%;
+  }
+  
+  .textos a{
+    font-size: 18px;
+    margin: 0px 23px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-decoration: underline;
+  }
+}
+
+.pagina-1-text{
+  width: 350px;
+  margin: 125px 125px;
+  text-align: justify;
+  height: calc(100% - 200px - 140px);
+}
+
+#hello{
+  font-size: 50px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+#text{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (max-width:715px){
+  .pagina-1-text{
+    width: 350px;
+    margin: 70px 70px;
+    text-align: justify;
+    height: calc(100% - 200px - 0px);
+  }
+  
+  #hello{
+    font-size: 50px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+  }
+  
+  #text{
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.pagina-2-text{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.quem{
+  position: relative;
+  top: 85px;
+  width: 185px;
+  height: 45px;
+  background-color: white;
+  margin: 70px;
+  border-radius: 15px;
+}
+
+.quem p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+}
+
+.eu{
+  float: right;
+  width:70%;
+  height: auto;
+  background-color: #D9FDD3;
+  margin: 60px 70px;
+  border-radius: 35px;
+  padding: 15px;
+}
+
+.eu p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.deseja{
+  width: 250px;
+  height: 45px;
+  background-color: white;
+  margin: 20px 70px;
+  border-radius: 35px;
+}
+
+.deseja p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%); 
+}
+
+.desafio{
+  float: right;
+  width: 70%;
+  height: auto;
+  background-color: #D9FDD3;
+  margin: 20px 70px;
+  border-radius: 35px;
+  margin-top: 30px;
+}
+
+.desafio p{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px
+}
+
+@media (max-width:715px){
+  .pagina-2-text{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.pagina-3-tec{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+.tecs{
+  width: calc(50% - 100px);
+  height: auto;
+  background-color: transparent;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: column; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+#marcacao{
+  width: 330px;
+  height: auto;
+  min-height: 50px;
+  background-color: #FF3131;
+  border-radius: 30px;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+  border: 2px solid black;
+  box-shadow: inset -2px -1px 0px 0px black;
+}
+
+#marcacao p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#html-css{
+  display: flex;
+  width: 330px;
+  height: auto;
+  min-width: 180px;
+  justify-content: center;
+}
+
+#html-css img{
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+#programacao{
+  width: 330px;
+  height: auto;
+  min-height: 50px;
+  background-color: #FED142;
+  border-radius: 30px;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+  border: 2px solid black;
+  box-shadow: inset -2px -1px 0px 0px black;
+}
+
+#programacao p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#python-c{
+  display: flex;
+  width: 330px;
+  height: auto;
+  min-width: 180px;
+  justify-content: center;
+}
+
+#python-c img{
+  margin-top: 10px;
+  width: 90px;
+  height: 90px;
+}
+
+#frame{
+  width: 330px;
+  height: auto;
+  min-height: 50px;
+  background-color: #092E20;
+  border-radius: 30px;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+  border: 2px solid black;
+  box-shadow: inset -2px -1px 0px 0px black;
+}
+
+#frame p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#django{
+  display: flex;
+  width: 330px;
+  height: auto;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.tecs h2{ /*TEMPORARIO, ATÉ TERMINAR BANCO DE DADOS E DJANGO*/
+  margin: 20px;
+  position: relative;
+  left: 17%;
+  width: 400px;
+  font-weight: bold;
+}
+
+#django img{
+  margin-top: 10px;
+  visibility: hidden;/*Enquanto DJANGO nao for aprendido, deixar hidden*/
+  width: 90px;
+  height: 90px;
+}
+
+#banco{
+  width: 330px;
+  height: auto;
+  min-height: 50px;
+  background-color: #86B2D9;
+  border-radius: 30px;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+  border: 2px solid black;
+  box-shadow: inset -2px -1px 0px 0px black;
+}
+
+#banco p{
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+#sql{
+  display: flex;
+  width: 330px;
+  height: auto;
+  min-width: 180px;
+  justify-content: center;
+}
+
+#sql img{
+  margin-top: 10px;
+  visibility: hidden;/*Enquanto banco de dados nao for aprendido, deixar hidden*/
+  width: 90px;
+  height: 90px;
+}
+
+.tecs-2{
+  width: calc(50% - 100px);
+  height: calc(100% - 200px);
+  background-color: transparent;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: column; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+.tecs-2 p{
+  padding: 15px;
+  max-height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#div0{
+  width: 100%;
+  height: auto;
+  background-color: rgba(28, 28, 232, 0.733);
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#div0 p{
+  font-size: 30px;
+  color: white;
+}
+
+#div1{
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 49, 49, 0.3);
+  display: none;
+  border-radius: 25px;
+  border: 2px solid rgb(255, 49, 49);
+  margin-bottom: 5px;
+}
+
+#div2{
+  width: 100%;
+  height: auto;
+  background-color: rgba(0,115,188, 0.3);
+  display: none;
+  border-radius: 25px;
+  border: 2px solid rgb(0,115,188);
+  margin-bottom: 5px;
+}
+
+#div3{
+  width: 100%;
+  height: auto;
+  background-color: rgba(254, 209, 66, 0.3);
+  display: none;
+  border-radius: 25px;
+  border: 2px solid rgb(254, 209, 66);
+  margin-bottom: 5px;
+}
+
+#div4{
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 84, 148, 0.651);
+  display: none;
+  border-radius: 25px;
+  border: 2px solid rgb(0, 84, 148);
+}
+
+@media (max-width:900px){
+  .pagina-3-tec{
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .tecs{
+    width: 100% ;
+    height: auto;
+  }
+  .tecs-2{
+    width: 100%;
+    height: auto;
+  }
+
+  #div0{
+    width: calc(100% - 150px) ;
+  }
+
+  #div1{
+    width: calc(100% - 150px) ;
+  }
+
+  #div2{
+    width: calc(100% - 150px) ;
+  }
+
+  #div3{
+    width: calc(100% - 150px) ;
+  }
+
+  #div4{
+    width: calc(100% - 150px) ;
+  }
+}
+
+.pagina-4-curso{
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+}
+
+.cursos{
+  width: 100%;
+  height: auto;
+  max-height: calc(100% - 100px);
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap; /*Para quando for necessario utilizar quebra de linha*/
+  padding: 1rem;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.item{
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 1);
+  flex-grow: 1;
+  flex-shrink: 0;
+  color: white;
+}
+
+@media (max-width:900px){
+  .pagina-4-curso{
+    height: auto;
+  }
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  display: flex; /*Transforma o layout da tela em flexivel, fazendo os itens ficarem em linha*/
+  flex-direction: row; /*Informa que a direção do flex é horizontal, estilo formato de linhas*/
+  justify-content: center; /*Informa que os itens serão centralizados no flex-direction ROW*/
+  align-items: center; /*Centraliza os itens verticalmente*/
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+}
+
+footer div{
+  width: 50%;
+  height: auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+footer div img{
+  width: 25px;
+  height: 25px;
+}
+
+footer a{
+  margin: 10px;
+  color: black;
+  font-size: 18px;
+}
